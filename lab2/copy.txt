@@ -1,0 +1,25 @@
+Please visit :
+ . http://bochs.sourceforge.net
+ . http://www.nongnu.org/vgabios
+
+Bochs VBE Display Adapter enabled
+
+Bochs BIOS - build: 02/13/08
+$Revision: 1.194 $ $Date: 2007/12/23 19:46:27 $
+Options: apmbios pcibios eltorito rombios32
+
+ata0 master: Generic 1234 ATA-6 Hard-Disk (  60 MBytes)
+
+Booting from Floppy...
+
+Linux 0.11 is booting,Revised By Luodian...
+Now we are in setup...
+
+Cursor POS:1400
+Memory SIZE:3C00KB
+
+HD Info
+Cylinders:00CC
+Headers:0010
+Secotrs:0026
+ß

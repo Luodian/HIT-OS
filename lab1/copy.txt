@@ -1,0 +1,25 @@
+Plex86/Bochs VGABios current-cvs 07 Jan 2008
+This VGA/VBE Bios is released under the GNU LGPL
+
+Please visit :
+ . http://bochs.sourceforge.net
+ . http://www.nongnu.org/vgabios
+
+Bochs VBE Display Adapter enabled
+
+Bochs BIOS - build: 02/13/08
+$Revision: 1.194 $ $Date: 2007/12/23 19:46:27 $
+Options: apmbios pcibios eltorito rombios32
+
+ata0 master: Generic 1234 ATA-6 Hard-Disk (  60 MBytes)
+
+Booting from Floppy...
+
+Luodian's OS is Loadinﬂ
+
+
+
+
+
+
+
