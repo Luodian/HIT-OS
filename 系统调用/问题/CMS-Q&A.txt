@@ -1,0 +1,23 @@
+在实验报告中回答如下问题：
+
+Q: 从Linux 0.11现在的机制看，它的系统调用最多能传递几个参数？你能想出办法来扩大这个限制吗？
+A: 
+
+Linux-0.11的系统调用通过寄存器ebx、ecx、edx传递参数，最多能传递3个参数。
+
+根据汇编所学的知识，扩大传递参数的数量的方法：
+借鉴函数的实现方法，利用堆栈传递参数。
+将寄存器拆分为高位和低位传递一直比较小的参数；
+通过定义结构体，在结构体中存入很多参数，把结构体在内核内存中的入口地址作为参数进行传递；
+
+
+
+Q: 用文字简要描述向Linux 0.11添加一个系统调用foo()的步骤。
+A: 
+
+假设这是一个 void foo()
+首先在include/unistd.h中定义宏__NR_foo，并添加供用户调用的函数声明void foo()；
+接着修改kernel/system_call.s中的nr_system_calls，使其增加1；
+在include/linux/sys.h中添加函数声明extern void sys_foo()，在系统调用入口表fn_ptr末端添加元素sys_foo；
+添加kernel/foo.c文件，实现sys_foo()函数；
+修改kernel/Makefile，在OBJS中加入foo.o，并添加生成foo.s、foo.o所依赖的文件。
